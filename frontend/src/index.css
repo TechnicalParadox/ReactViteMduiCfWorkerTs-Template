@@ -1,0 +1,31 @@
+:root,
+
+/* Override Default MDUI Light Theme */
+.mdui-theme-light {
+    /*color: #000;*/
+    /*background-color: #fff;*/
+}
+
+/* Override Default MDUI Dark Theme */
+.mdui-theme-dark {
+    /*color: #fff;*/
+    /*background-color: #000;*/
+}
+
+/* Override Default MDUI Auto Theme if user prefers light mode */
+@media (prefers-color-scheme: light) {
+    .mdui-theme-auto {
+        /*color: #000;*/
+        /*background-color: #fff;*/
+    }
+    /* Could also override light/dark themes here and use those instead if theme is changed from auto in other files */
+}
+
+/* Override Default MDUI Dark Theme if user prefers dark mode */
+@media (prefers-color-scheme: dark) {
+    .mdui-theme-auto {
+        /*color: #fff;*/
+        /*background-color: #000;*/
+    }
+    /* Could also override light/dark themes here and use those instead if theme is changed from auto in other files */
+}
